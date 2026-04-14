@@ -5,6 +5,18 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww29700\viewh16060\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
+
+ .hidden {
+    display: none !important;
+}
+
+#reader {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #000; /* Schwarz, damit man sieht, wo die Kamera sein sollte */
+}
+ 
 \f0\fs24 \cf0 body \{\
     font-family: sans-serif;\
     display: flex;\
