@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Talker</title>
+    <title>QR Scanner</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/html5-qrcode"></script>
 </head>
 <body>
     <div id="app">
         <h1>QR Talker</h1>
-        <div id="reader-container" class="hidden">
-    <div id="reader" style="width: 300px; min-height: 300px;"></div>
-    <button id="stop-btn">Abbrechen</button>
-</div>
+        
         <div id="home-screen">
             <button id="start-btn">QR CODE SCANNEN</button>
         </div>
+
+        <div id="reader-container" style="display: none;">
+            <div id="reader" style="width: 100%; min-height: 300px; background: #000;"></div>
+            <br>
+            <button id="stop-btn" style="padding: 15px; background: red; color: white; border: none; border-radius: 5px;">Abbrechen</button>
+        </div>
     </div>
-    <script src="https://unpkg.com/html5-qrcode"></script>
     <script src="script.js"></script>
 </body>
 </html>
